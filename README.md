@@ -11,6 +11,7 @@ This project aims to detect AI-generated text by leveraging sentence embeddings 
   - **CoSENT**: Maximizes similarity between semantically similar sentences.
   - **In-Batch Negatives**: Incorporates in-batch negatives to help the model better distinguish between similar and dissimilar sentences.
   - **AnglE**: Optimizes angular relationships in the embedding space for enhanced alignment of similar sentences.
+  - **Cross Entropy Loss**: Employed to minimize classification error by maximizing the likelihood of correct labels in similarity prediction, enhancing the model’s capability in distinguishing AI-generated from human-generated text.
 
 ### Data Preparation
 - **Dataset**: DAIGT v2, containing:
