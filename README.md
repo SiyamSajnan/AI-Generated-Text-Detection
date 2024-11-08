@@ -5,8 +5,8 @@ This project aims to detect AI-generated text by leveraging sentence embeddings 
 
 ## Methodology
 
-### Embedding Generation with SimCSE-RoBERTa-large
-- **Model**: SimCSE-RoBERTa-large was chosen for its strength in generating high-quality sentence embeddings.
+### Embedding Generation with BERT
+- **Model**: BERT was chosen for its strength in generating high-quality sentence embeddings.
 - **Fine-Tuning**: The model was fine-tuned to improve sentence embeddings using a custom loss function that combines:
   - **CoSENT**: Maximizes similarity between semantically similar sentences.
   - **In-Batch Negatives**: Incorporates in-batch negatives to help the model better distinguish between similar and dissimilar sentences.
@@ -21,7 +21,7 @@ This project aims to detect AI-generated text by leveraging sentence embeddings 
   - **Label 0**: Sentence pairs with dissimilar labels (one AI, one human) were considered dissimilar and labeled as 0.
 
 ### 3. Fine-Tuning the Model
-- The SimCSE-RoBERTa-large model was fine-tuned on these sentence pairs to better capture subtle differences between AI-generated and human-generated text.
+- The BERT model was fine-tuned on these sentence pairs to better capture subtle differences between AI-generated and human-generated text.
 
 ### 4. Embedding Generation
 - **Embedding Extraction**: After fine-tuning, embeddings for each sentence in the dataset were generated, capturing nuanced distinctions between AI and human text.
